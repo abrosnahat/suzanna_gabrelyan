@@ -48,7 +48,25 @@ body {
     box-shadow: 4px 4px 8px 0px rgba(0, 255, 0, 0.2);
 }
 
-.whatsapp-link img {
+
+.telegram-link {
+    background: #40B3E0;
+    width: 100%;
+    height: 60px;
+    justify-content: center;
+    margin: 20px 0;
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+    font-size: 32px;
+    border-radius: 15px;
+    line-height: 64px;
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 132, 255, 0.2);
+    box-shadow: 4px 4px 8px 0px rgba(0, 132, 255, 0.2);
+}
+
+
+.whatsapp-link img, .telegram-link img {
     transform: scale(.85);
     animation: pulse 2s ease-in-out infinite;
 }
