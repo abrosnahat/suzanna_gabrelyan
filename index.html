@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Габрелян Сюзанна</title>
-<link rel="shortcut icon" href="img/fav.png" type="image/jpg">
+    <link rel="shortcut icon" href="img/fav.png" type="image/jpg">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,6 +18,12 @@
         document.addEventListener('DOMContentLoaded', function () {
             // инициализация слайдера
             var slider = new SimpleAdaptiveSlider('.slider', {
+                loop: true,
+                autoplay: true,
+                interval: 4000,
+            });
+
+            var slider2 = new SimpleAdaptiveSlider('.slider2', {
                 loop: true,
                 autoplay: true,
                 interval: 4000,
@@ -46,6 +52,33 @@
                 <li> Узнать от чего твоя душа разрушается и наслаждается;</li>
                 <li>Развить позитивное мышление и выработать новые схемы поведения для достижения максимальных благ</li>
             </ul>
+        </div>
+
+        <br>
+        <div class="slider">
+            <div class="slider__wrapper">
+                <div class="slider__items">
+                    <div class="slider__item" data-splide-interval="1000"><img src="img/diplom.jpg" alt=""></div>
+                    <div class="slider__item" data-splide-interval="1000"><img src="img/diplom2.jpg" alt=""></div>
+                    <div class="slider__item" data-splide-interval="1000"><img src="img/diplom3.jpg" alt=""></div>
+                    <div class="slider__item" data-splide-interval="1000"><img src="img/diplom3.jpg" alt=""></div>
+                </div>
+            </div>
+
+            <div class="splide__progress">
+                <div class="splide__progress__bar">
+                </div>
+            </div>
+
+            <script>
+                var splide = new Splide('.splide');
+
+                splide.on('autoplay:playing', function (rate) {
+                    console.log(rate); // 0-1
+                });
+
+                splide.mount();
+            </script>
         </div>
 
 
@@ -149,7 +182,11 @@
             <ul>
                 <li>Как загадывать желания правильно;</li>
                 <li>Как создать мощный энергетический посыл на исполнение желаний;</li>
+                <li>Проработка 12 жизненно важных сфер (здоровье и красота, спорт, друзья, окружение, семья, отношения,
+                    бизнес, деньги, духовность, творчество, личностный рост, яркость жизни)</li>
             </ul>
+
+            <p class="price">Стоимость: <span> 2 004₽</span></p>
         </div>
 
 
@@ -199,33 +236,6 @@
             <p class="price">Стоимость: <span> 609₽</span></p>
         </div>
 
-        <h3>❤️‍🔥ОТЗЫВЫ</h3>
-
-        <div class="slider">
-            <div class="slider__wrapper">
-                <div class="slider__items">
-                    <div class="slider__item">
-                        <img src="img/otz1.jpg" alt="">
-                    </div>
-                    <div class="slider__item">
-                        <img src="img/otz2.jpg" alt="">
-                    </div>
-                    <div class="slider__item">
-                        <img src="img/otz3.jpg" alt="">
-                    </div>
-                    <div class="slider__item">
-                        <img src="img/otz4.jpg" alt="">
-                    </div>
-                    <div class="slider__item">
-                        <img src="img/otz5.jpg" alt="">
-                    </div>
-                    <div class="slider__item">
-                        <img src="img/otz6.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <h3>❤️‍🔥ХОЧУ ЗАКАЗАТЬ МАГНИТЫ🧲</h3>
         <div class="content">
             <p>Магниты заряженные энергией Жаната Кожамжарова!!!</p><br>
@@ -253,6 +263,35 @@
 
             <p class="price">Стоимость: <span> 500₽</span></p>
         </div>
+
+        <h3>❤️‍🔥ОТЗЫВЫ</h3>
+
+        <div class="slider2">   
+            <div class="slider__wrapper">
+                <div class="slider__items">
+                    <div class="slider__item">
+                        <img src="img/otz1.jpg" alt="">
+                    </div>
+                    <div class="slider__item">
+                        <img src="img/otz2.jpg" alt="">
+                    </div>
+                    <div class="slider__item">
+                        <img src="img/otz3.jpg" alt="">
+                    </div>
+                    <div class="slider__item">
+                        <img src="img/otz4.jpg" alt="">
+                    </div>
+                    <div class="slider__item">
+                        <img src="img/otz5.jpg" alt="">
+                    </div>
+                    <div class="slider__item">
+                        <img src="img/otz6.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <br><br>
     </main>
 </body>
