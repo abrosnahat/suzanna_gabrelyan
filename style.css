@@ -32,6 +32,39 @@ body {
     margin-bottom: 10px;
 }
 
+.whatsapp-link {
+    background: #25d366;
+    width: 100%;
+    height: 60px;
+    justify-content: center;
+    margin: 20px 0;
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+    font-size: 32px;
+    border-radius: 15px;
+    line-height: 64px;
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 255, 0, 0.2);
+    box-shadow: 4px 4px 8px 0px rgba(0, 255, 0, 0.2);
+}
+
+.whatsapp-link img {
+    transform: scale(.85);
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    from {
+      transform: scale(.85);
+    }
+    50% {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(.85);
+    }
+  }
+
 .diplom {
     font-size: 22px;
     text-align: center;
